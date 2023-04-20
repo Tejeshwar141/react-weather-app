@@ -48,7 +48,7 @@ function App() {
 {data.name !== undefined &&
             <div className="bottom">
             <div className="feels">
-            <p>Feels</p>
+            <p>Feels Like</p>
               {data.main ? <p className="bold">{data.main.feels_like.toFixed()}°F</p> : null}
             </div>
             <div className="humidity">
@@ -56,7 +56,7 @@ function App() {
             {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
             </div>
             <div className="wind">
-              <p>Wind</p>
+              <p>Wind Speed</p>
               {data.wind ? <p className="bold">{data.wind.speed.toFixed()}MPH</p> : null}
             </div>
           </div>
